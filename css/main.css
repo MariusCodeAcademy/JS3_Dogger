@@ -8,3 +8,27 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* Globals */
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/* header section */
+
+.header {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-logo {
+  font-size: 2rem;
+  padding-bottom: 0.33em;
+}

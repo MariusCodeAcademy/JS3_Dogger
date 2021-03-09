@@ -1,10 +1,27 @@
+/* Variables - kintamieji */
+:root {
+  --text-main-color: #999999;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
+  --primary: #a2c0be;
+  --dark: rgb(32, 32, 32);
+}
+
 .container {
-  max-width: 95%;
+  max-width: calc(100% - 3rem);
   margin: 0 auto;
 }
 
 body {
   padding-bottom: 500px;
+  font-family: var(--main-font);
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: var(--text-main-color);
 }
 
 /* Common styles  */

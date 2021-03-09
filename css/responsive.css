@@ -17,6 +17,16 @@
   }
 
   /* blog secion */
+
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+  }
+
+  .blog .heading-section {
+    grid-column: span 2;
+  }
 }
 
 /* desktop */
@@ -68,5 +78,17 @@
     margin-right: 50px;
     grid-area: text3;
     text-align: right;
+  }
+
+  /* blog section  */
+
+  .blog-post {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 0 1em;
+  }
+
+  .blog-post__image {
+    grid-row: 1 / 5;
   }
 }

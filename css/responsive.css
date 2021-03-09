@@ -29,6 +29,13 @@
   }
 
   /* Gallery section */
+  /* pasirasyti su min max kad nereiketu daugiau media */
+
+  /*  */
+  .gallery-grid {
+    /* grid-template-columns: repeat(auto-fill/auto-fit  minmax(<kiek min plotis>, <max plotis 1fr>)); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 /* desktop */

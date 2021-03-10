@@ -25,13 +25,13 @@
     <div class="container">
       <header class="header">
         <a class="main-logo" href="/">Dogger<span>.</span></a>
-        <nav class="main-nav">
+        <nav id="main-nav" class="main-nav">
           <a href="#" class="main-nav__link">Home</a>
           <a href="#" class="main-nav__link">About</a>
           <a href="#" class="main-nav__link">Services</a>
           <a href="#" class="main-nav__link">Contact</a>
         </nav>
-        <i class="fa fa-bars main-nav-toggle"></i>
+        <i id="main-nav-toggle" class="fa fa-bars main-nav-toggle"></i>
       </header>
 
       <section class="hero">
@@ -269,7 +269,7 @@
     <!-- footer  -->
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-grid">
         <div class="footer__about">
           <h3 class="footer__title">About us</h3>
           <p class="footer__text">
@@ -310,8 +310,7 @@
               class="footer__newsletter__input-inline"
               type="text"
               placeholder="Enter email"
-            />
-            <button class="footer__newsletter__input-inline">Send</button>
+            /><button class="footer__newsletter__btn-inline">Send</button>
           </div>
         </div>
 
@@ -323,5 +322,16 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      document
+        .getElementById("main-nav-toggle")
+        .addEventListener("click", toggleNav);
+      const mainNav = document.getElementById("main-nav");
+
+      function toggleNav() {
+        mainNav.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

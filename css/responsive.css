@@ -19,6 +19,14 @@
     max-width: 720px;
   }
 
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav-toggle {
+    display: none;
+  }
+
   .hero {
     align-items: flex-start;
     justify-content: center;

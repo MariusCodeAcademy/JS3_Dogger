@@ -9,7 +9,15 @@
 /* header section */
 
 .header {
-  padding-top: 0.5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.header-flex {
+  padding: 0.5em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,8 +27,18 @@
   display: none;
 }
 
+/* kai paspaudem ant burgerio tai main-van gauna klase active */
+.main-nav.active {
+  display: block;
+}
+
 .main-logo {
   font-size: 2rem;
+}
+
+.main-nav-toggle {
+  font-size: 1.6rem;
+  cursor: pointer;
 }
 
 /* hero section */

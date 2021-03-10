@@ -1,4 +1,18 @@
 /* responsive */
+@media screen and (min-width: 470px) {
+  /* footer beter */
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+  }
+  .footer__about,
+  .footer__newsletter,
+  .footer__hr,
+  .footer__copy {
+    grid-column: span 2;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -36,10 +50,47 @@
     /* grid-template-columns: repeat(auto-fill/auto-fit  minmax(<kiek min plotis>, <max plotis 1fr>)); */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  /* footer  */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    grid-template-areas:
+      "about about about"
+      ". . ."
+      "hr hr hr"
+      "copy copy copy";
+  }
+  .footer__about {
+    grid-area: about;
+  }
+  .footer__newsletter {
+    grid-column: auto;
+  }
+  .footer__hr {
+    grid-area: hr;
+  }
+  .footer__copy {
+    grid-area: copy;
+  }
 }
 
 /* desktop */
 @media screen and (min-width: 992px) {
+  /* footer  */
+  .footer-grid {
+    grid-template-columns: 1.4fr 0.7fr 1fr 1fr;
+    row-gap: 2rem;
+    grid-template-areas:
+      "about nav-link social news-let"
+      "hr hr hr hr"
+      "copy copy copy copy";
+  }
+
+  .footer__newsletter {
+    grid-column: news-let;
+  }
+
   .container {
     max-width: 920px;
   }
